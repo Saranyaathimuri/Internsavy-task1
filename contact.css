@@ -1,0 +1,183 @@
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  
+  .contact{
+    position: relative;
+    min-height: 89.80vh;
+    padding :50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y=");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-attachment: fixed;
+    max-height: 250vw;
+  }
+  .contact .content{
+    max-width: 1000px;
+    text-align: center;
+
+  }
+  .contact .content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: darkviolet;
+    font-style:oblique;
+
+
+  }
+  .contact .content p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: orangered;
+  }
+  .container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  .container .contactinfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contactinfo .box{
+    position: relative;
+    padding: 20px;
+    display: flex;
+  }
+  .container .contactinfo .icon{
+    min-width: 60px;
+    min-height: 60px;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactinfo .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: brown;
+    flex-direction: column;
+    font-weight: 400;
+    font-style:italic;
+  }
+  .container .contactinfo .text h3{
+    font-weight: 300;
+    color: #00bcd4;
+  }
+  .contactForm{
+    width: 30%;
+    padding:20px;
+    background:#e9f1fc;
+    float: left;
+  }
+  .contactForm h2{
+    font-size: 300;
+    color: #333;
+    font-weight: 500;
+    
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+  }
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none;
+
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid~ span
+  {
+    color: #21047a;
+    font-size: 12;
+    transform: translatey(-20px);
+  }
+  .contactForm .inputBox input[type="submit"]{
+    width:100px;
+    background: pink;
+    border:none;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 18px;
+
+  }
+  @media (max-width:991px){
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom:40px ;
+    }
+    .container .contactinfo .contactForm{
+        width:100%;
+    }
+
+
+  }
+  .navbar {
+    background-color: #2b527be1;
+    color: #fff;
+    overflow: hidden;
+    max-height: 150px;
+    padding-bottom: 10px;
+   
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: #341b39;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    text-shadow: 3px 3px rgb(209, 149, 209);
+    font-style: italic;
+    padding-top: 10px;
+    
+
+   
+  }
+  .navbar a:hover{
+    background-color: hwb(310 41% 18% / 0.288);
+    
+  }
